@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시립서울천문대</title>
+    <!-- 파비콘 -->
+    <link rel="icon" href="img/favicon-32x32.png" type="image/x-icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- 우리 작업 CSS-->
+    <link rel="stylesheet" href="css/index-pc.css">
+    <link rel="stylesheet" href="css/index-mo.css">
+    <link rel="stylesheet" href="css/sub_program_1.css">
+    <link rel="stylesheet" href="css/sub_program_2.css">
+    <link rel="stylesheet" href="css/sub_program_3.css">
+
+    <!-- js -->
+    <script src="js/jquery-3.7.1.js"></script>
+    <!-- 우리 작업 js-->
+    <script src="js/index.js" defer></script>
+    <script src="js/sub_program_1.js" defer></script>
+    <script src="js/sub_program_3.js" defer></script>
+</head>
+
+<body>
+    <!-- 헤더/푸터 index/sub페이지 동일 -->
+
+    <!-- ============================ 헤더 (공통) ============================ -->
+    <header>
+        <div id="header">
+            <!-- 로고 -->
+            <div class="logo"><a href="index.html"><img src="img/index_logo_153x65.png" alt=""></a></div>
+
+            <!-- 모바일 메뉴 버튼 -->
+            <div class="nav_mobile_btn"></div>
+
+            <div class="top_wrap">
+                <!-- 네비 -->
+                <div class="nav">
+                    <ul class="main_menu">
+                        <li><a href="#">천문대 소개</a>
+                            <ul class="sub_menu">
+                                <li><a href="#">천문대소개</a></li>
+                                <li><a href="#">운영법인소개</a></li>
+                                <li><a href="#">시설소개</a></li>
+                                <li><a href="#">오시는 길</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">이용안내</a>
+                            <ul class="sub_menu">
+                                <li><a href="#">이용안내</a></li>
+                                <li><a href="#">관측대상</a></li>
+                                <li><a href="#">월별일정</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">예약안내</a>
+                            <ul class="sub_menu">
+                                <li><a href="#">예약안내</a></li>
+                                <li><a href="#">예약하기</a></li>
+                                <li><a href="#">환불규정</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="sub_program_1.html">프로그램 소개</a> <!-- 진우 작업페이지 연결 -->
+                            <ul class="sub_menu">
+                                <li><a href="sub_program_2.html">천문과학지식 프로그램</a></li>
+                                <li><a href="sub_program_2.html">천문과학문화 프로그램</a></li>
+                                <li><a href="sub_program_2.html">천문체험활동 프로그램</a></li>
+                                <li><a href="sub_program_2.html">지역사회연계 프로그램</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="sub_news_1.html">천문소식</a> <!-- 도원 작업페이지 연결 -->
+                            <ul class="sub_menu">
+                                <li><a href="sub_news_2.html">천문우주이야기</a></li>
+                                <li><a href="#">천문우주소식지</a></li>
+                                <li><a href="#">천체사진</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">참여마당</a>
+                            <ul class="sub_menu">
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">보도자료</a></li>
+                                <li><a href="#">자주묻는 질문</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 검색 -->
+                <div class="top_info">
+                    <div class="login">
+                        <img src="img/index_icon_login.png" alt="">
+                        <img src="img/index_icon_instagram.png" alt="">
+                    </div>
+                    <div class="search">
+                        <input type="search" name="" id="" class="search_box" placeholder="12월 인기 프로그램!"
+                            onfocus="this.placeholder=''" onblur="this.placeholder='12월 인기 프로그램!'">
+                        <button class="search_bt"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- ============================ 메인 (본인 페이지 작업) ============================ -->
+    <main>
+        <!-- 메인비주얼 배너 -->
+    <div id="main_wrap">
+        <div id="main_banner">
+            <h1>RESERVE <span>개인예매 및 예약</span></h1>
+        </div>
+        <!-- 프로그램 -->
+        <div id="main_wide">
+            <div class="res_left">
+                <h1>예매/예약 프로그램 선택</h1>
+                <select name="res" id="res">
+                    <option value="program1">친구들과 함께하는 단체별자리여행</option>
+                    <option value="program2">도심 속 별빛산책</option>
+                    <option value="program3">천문동아리</option>
+                    <option value="program4">기관연계사업</option>
+                </select>
+                <div class="res_img">
+                    <ul>
+                      <li><img src="img/programimg 1.png" alt=""></li>
+                      <li><img src="img/programimg 2.png" alt=""></li>
+                      <li><img src="img/programimg 3.png" alt=""></li>
+                      <li><img src="img/programimg 4.png" alt=""></li>
+                    </ul>
+                </div>
+                <div class="res_left_text">
+                    <h1>프로그램 개인 예약 및 <br> 단체 예약</h1>
+                    <p>프로그램마다 신청 방법과 <br> 예약 가능 시간이 다릅니다. <br> 금,토,일은 18:00 이후 예약 불가</p>
+                </div>
+            </div>
+            <div class="res_right">
+                <div class="date_box">
+                    <h1>날짜 선택</h1>
+                    <div class="date_left">
+                        <div class="calendar-container">
+                            <div class="calendar-header">
+                              <button id="prevBtn">&lsaquo;</button>
+                              <h2 id="currentMonth"></h2>
+                              <button id="nextBtn">&rsaquo;</button>
+                            </div>
+                            <div class="calendar-days">
+                              <div class="day">SUN</div>
+                              <div class="day">MON</div>
+                              <div class="day">TUE</div>
+                              <div class="day">WED</div>
+                              <div class="day">THU</div>
+                              <div class="day">FRI</div>
+                              <div class="day">SAT</div>
+                            </div>
+                            <div class="calendar-dates" id="calendarDates"></div>
+                          </div>
+                        <h1>이용가능 시간 안내</h1>
+                        <br>
+                        <p>일,월,화,수,목 10:00 ~ 21:00</p>
+                        <br>
+                        <p>금,토 10:00 ~ 18:00</p>
+                        <br>
+                        <h2>환불은 프로그램 시작 전날까지 전화신청만 가능하며 <br> 
+                            이후 환불불가 (환불규정 참고)</h2>  
+                    </div>
+                    <div class="date_right">
+                        <h1>예약 및 환불 안내</h1>
+                        <h2>도심 속 별빛산책</h2>
+                        <p>	
+                            · 환불시점 : 시작 하루 전 취소 100% 환불, 당일 취소 및 환불 불가 <br>
+                            · 환불방법 : 전화로 환불요청 (02-2204-3190) <br>
+                            · 인원변경 : 전화로 환불요청 후 재예약 <br>
+                            · 체험 전일 문자메세지를 통해 프로그램 진행 관련 안내 <br>
+                            · 기타사항 : 도심 속 별빛산책 교재는 사계절 동일
+                        </p>
+                        <h2>사전 예약 프로그램</h2>
+                        <p>	
+                            · 환불시점 : 프로그램별 상이 (홍보지 참조) <br>
+                            · 환불방법 : 전화로 환불요청 (02-2204-3190) <br>
+                            · 사전 예약으로 진행되는 프로그램은 참가희망자가 많으니
+                            취소사유 발생시 다른 이용객들에게 기회를 줄 수 있도록 미리 취소해주시기 바랍니다.
+                        </p>
+                        <h2>발권안내</h2>
+                        <p>
+                            · 프로그램 시작 30분 전 광진청소년센터 1층 안내데스크 발권
+                            · 시작 초과 시 30분 단위로 입장가능
+                            · 발권 시 희망자에 한해 주차권 지급(3시간 무료지원)
+                        </p>
+                    </div>
+                </div>
+            <hr>
+                <div class="time">
+                    <h1>시간 선택</h1>
+                    <div>
+                        <div class="time_box">10:00 <span>예약 가능</span></div>
+                        <div class="time_box">11:00 <span>예약 가능</span></div>
+                        <div class="time_box">12:00 <span>예약 가능</span></div>
+                        <div class="time_box">13:00 <span>예약 가능</span></div>
+                        <div class="time_box">14:00 <span>예약 가능</span></div>
+                        <div class="time_box">15:00 <span>예약 가능</span></div>
+                        <div class="time_box">16:00 <span>예약 가능</span></div>
+                        <div class="time_box">17:00 <span>예약 가능</span></div>
+                        <div class="time_box">18:00 <span>예약 가능</span></div>
+                        <div class="time_box">19:00 <span>예약 가능</span></div>
+                        <div class="time_box">20:00 <span>예약 가능</span></div>
+                        <div class="time_box">21:00 <span>예약 가능</span></div>
+                    </div>
+                </div>
+            <hr>
+            <div class="last">
+                <h1>인원 선택 <span>금액은 프로그램에 따라 차이</span></h1>
+                <div class="last_box">
+                    <div class="last_left">
+                        <h1>시니어</h1>
+                    </div>
+                    <div class="last_right">
+                        <div class="last_button active">0</div>
+                        <div class="last_button">1</div>
+                        <div class="last_button">2</div>
+                        <div class="last_button">3</div>
+                        <div class="last_button">4</div>
+                        <div class="last_button">이상</div>
+                    </div>
+                </div>
+                <div class="last_box">
+                    <div class="last_left">
+                        <h1>성인</h1>
+                    </div>
+                    <div class="last_right">
+                        <div class="last_button active">0</div>
+                        <div class="last_button">1</div>
+                        <div class="last_button">2</div>
+                        <div class="last_button">3</div>
+                        <div class="last_button">4</div>
+                        <div class="last_button">이상</div>
+                    </div>
+                </div>
+                <div class="last_box">
+                    <div class="last_left">
+                        <h1>청년</h1>
+                    </div>
+                    <div class="last_right">
+                        <div class="last_button active">0</div>
+                        <div class="last_button">1</div>
+                        <div class="last_button">2</div>
+                        <div class="last_button">3</div>
+                        <div class="last_button">4</div>
+                        <div class="last_button">이상</div>
+                    </div>
+                </div>
+                <div class="last_box">
+                    <div class="last_left">
+                        <h1>청소년</h1>
+                    </div>
+                    <div class="last_right">
+                        <div class="last_button active">0</div>
+                        <div class="last_button">1</div>
+                        <div class="last_button">2</div>
+                        <div class="last_button">3</div>
+                        <div class="last_button">4</div>
+                        <div class="last_button">이상</div>
+                    </div>
+                </div>
+                <div class="last_box">.
+                    <div class="last_left">
+                    <h1>유아</h1>
+                    </div>
+                    <div class="last_right">
+                        <div class="last_button active">0</div>
+                        <div class="last_button">1</div>
+                        <div class="last_button">2</div>
+                        <div class="last_button">3</div>
+                        <div class="last_button">4</div>
+                        <div class="last_button">이상</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="check"><a href="index.html">확인</a></div>   
+    </div>
+    </main>
+
+    <!-- ============================ 탑버튼 (공통) ============================ -->
+    <div id="top"><a href="#"><img src="img/index_btn_top.png" alt=""></a></div>
+
+    <!-- ============================ 푸터 (공통) ============================ -->
+    <footer>
+        <div id="footer">
+            <div class="footer_logo">
+                <img src="img/index_logo_153x65.png" alt="">
+            </div>
+
+            <div class="footer_info">
+                <ul>
+                    <li><a href="#">개인정보취급방침</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">사이트맵</a></li>
+                </ul>
+                <p class="footer_copyright">(04970) 서울시 광진구 구천면로 2(광장동 313-3)
+                    전화번호 02-2204-3190 팩스 02-2204-3150 사업자등록번호 206-82-65437
+                    Copyright(c) 2016 시립서울천문대 All Rights Reserved</p>
+            </div>
+
+            <div class="footer_site">
+                <select name="site" onchange="window.open(value, '_blank')" id="sitebar">
+                    <option value="https://www.kasi.re.kr/kor/index">한국천문연구원</option>
+                    <option value="http://www.scicenter.or.kr">한국과학관협회</option>
+                    <option value="http://www.kasma.kr">한국천문우주과학관협회</option>
+                    <option value="http://science.seoul.go.kr">서울시립과학관</option>
+                </select>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -6,188 +6,331 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>시립서울천문대</title>
     <!-- 파비콘 -->
-    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="icon" href="img/favicon-32x32.png" type="image/x-icon">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/reset.css">
     <!-- 우리 작업 CSS-->
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/sub_news_1.css">
-    <link rel="stylesheet" href="css/sub_news_2.css">
+    <link rel="stylesheet" href="css/index-pc.css">
+    <link rel="stylesheet" href="css/index-mo.css">
     <link rel="stylesheet" href="css/sub_program_1.css">
     <link rel="stylesheet" href="css/sub_program_2.css">
 
     <!-- js -->
     <script src="js/jquery-3.7.1.js"></script>
     <!-- 우리 작업 js-->
-    <script src="js/index.js"></script>
-    <script src="js/sub_news_1.js"></script>
-    <script src="js/sub_news_2.js"></script>
-    <script src="sub_program_1.js"></script>
-    <script src="sub_program_2.js"></script>
+    <script src="js/index.js" defer></script>
+    <script src="js/sub_program_1.js" defer></script>
+    <script src="js/sub_program_3.js" defer></script>
 </head>
 
 <body>
-    <div id="wrap">
-        <!-- 헤더 (공통) -->
-        <header>
-            <div id="header">
-                <div class="logo"><a href="index.html"><img src="img/logo_153x65.png" alt=""></a></div>
+    <!-- 헤더/푸터 index/sub페이지 동일 -->
 
-                <div class="top_wrap">
+    <!-- ============================ 헤더 (공통) ============================ -->
+    <header>
+        <div id="header">
+            <!-- 로고 -->
+            <div class="logo"><a href="index.html"><img src="img/index_logo_153x65.png" alt=""></a></div>
 
-                    <div class="nav">
-                        <ul class="main_menu">
-                            <li><a href="#">천문대 소개</a>
-                                <ul class="sub_menu">
-                                    <li><a href="#">천문대소개</a></li>
-                                    <li><a href="#">운영법인소개</a></li>
-                                    <li><a href="#">시설소개</a></li>
-                                    <li><a href="#">오시는 길</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">이용안내</a>
-                                <ul class="sub_menu">
-                                    <li><a href="#">이용안내</a></li>
-                                    <li><a href="#">관측대상</a></li>
-                                    <li><a href="#">월별일정</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">예약안내</a>
-                                <ul class="sub_menu">
-                                    <li><a href="#">예약안내</a></li>
-                                    <li><a href="#">예약하기</a></li>
-                                    <li><a href="#">환불규정</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="sub_program_1.html">프로그램 소개</a> <!-- 진우 작업페이지 연결 -->
-                                <ul class="sub_menu">
-                                    <li><a href="sub_program_2.html">천문과학지식 프로그램</a></li>
-                                    <li><a href="#">천문과학문화 프로그램</a></li>
-                                    <li><a href="#">천문체험활동 프로그램</a></li>
-                                    <li><a href="#">지역사회연계 프로그램</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="sub_news_1.html">천문소식</a> <!-- 도원 작업페이지 연결 -->
-                                <ul class="sub_menu">
-                                    <li><a href="sub_news_2.html">천문우주소식지</a></li>
-                                    <li><a href="#">천문우주이야기</a></li>
-                                    <li><a href="#">천체사진</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">참여마당</a>
-                                <ul class="sub_menu">
-                                    <li><a href="#">공지사항</a></li>
-                                    <li><a href="#">보도자료</a></li>
-                                    <li><a href="#">자주묻는 질문</a></li>
-                                    <li><a href="#">행사사진</a></li>
-                                    <li><a href="#">방문후기</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
+            <!-- 모바일 메뉴 버튼 -->
+            <div class="nav_mobile_btn"></div>
 
-                    <div class="top_info">
-                        <div class="login">
-                            <img src="img/login_2.png" alt="">
-                            <img src="img/instagram.png" alt="">
-                        </div>
-                        <div class="search">
-                            <input type="search" name="" id="" class="search_box" placeholder="12월 인기 프로그램!"
-                                onfocus="this.placeholder=''" onblur="this.placeholder='12월 인기 프로그램!'">
-                            <button class="search_bt"></button>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </header>
-
-
-        <!-- 메인 (본인 페이지 작업) -->
-        <main>
-            <!-- 메인비주얼 배너 -->
-            <div id="mian_wide">
-                <div class="wide_box">
-                    <img src="img/mimg_2.jpg" alt="">
-                </div>
-            </div>
-        </main>
-
-        <!-- 푸터 (공통) -->
-        <footer>
-            <div id="footer">
-                <div class="footer_logo">
-                    <img src="img/logo_153x65.png" alt="">
-                </div>
-
-                <div class="footer_info">
-                    <ul>
-                        <li><a href="#">개인정보취급방침</a></li>
-                        <li><a href="#">이용약관</a></li>
-                        <li><a href="#">사이트맵</a></li>
+            <div class="top_wrap">
+                <!-- 네비 -->
+                <div class="nav">
+                    <ul class="main_menu">
+                        <li><a href="#">천문대 소개</a>
+                            <ul class="sub_menu">
+                                <li><a href="#">천문대소개</a></li>
+                                <li><a href="#">운영법인소개</a></li>
+                                <li><a href="#">시설소개</a></li>
+                                <li><a href="#">오시는 길</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">이용안내</a>
+                            <ul class="sub_menu">
+                                <li><a href="#">이용안내</a></li>
+                                <li><a href="#">관측대상</a></li>
+                                <li><a href="#">월별일정</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">예약안내</a>
+                            <ul class="sub_menu">
+                                <li><a href="#">예약안내</a></li>
+                                <li><a href="#">예약하기</a></li>
+                                <li><a href="#">환불규정</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="sub_program_1.html">프로그램 소개</a> <!-- 진우 작업페이지 연결 -->
+                            <ul class="sub_menu">
+                                <li><a href="sub_program_2.html">천문과학지식 프로그램</a></li>
+                                <li><a href="sub_program_2.html">천문과학문화 프로그램</a></li>
+                                <li><a href="sub_program_2.html">천문체험활동 프로그램</a></li>
+                                <li><a href="sub_program_2.html">지역사회연계 프로그램</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="sub_news_1.html">천문소식</a> <!-- 도원 작업페이지 연결 -->
+                            <ul class="sub_menu">
+                                <li><a href="sub_news_2.html">천문우주이야기</a></li>
+                                <li><a href="#">천문우주소식지</a></li>
+                                <li><a href="#">천체사진</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">참여마당</a>
+                            <ul class="sub_menu">
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">보도자료</a></li>
+                                <li><a href="#">자주묻는 질문</a></li>
+                            </ul>
+                        </li>
                     </ul>
-                    <p class="footer_copyright">(04970) 서울시 광진구 구천면로 2(광장동 313-3)
-                        전화번호 02-2204-3190 팩스 02-2204-3150 사업자등록번호 206-82-65437
-                        Copyright(c) 2016 시립서울천문대 All Rights Reserved</p>
                 </div>
 
-                <div class="footer_site">
-                    <select name="site" onchange="window.open(value, '_blank')" id="sitebar">
-                        <option value="https://www.kasi.re.kr/kor/index">한국천문연구원</option>
-                        <option value="http://www.scicenter.or.kr">한국과학관협회</option>
-                        <option value="http://www.kasma.kr">한국천문우주과학관협회</option>
-                        <option value="http://science.seoul.go.kr">서울시립과학관</option>
-                    </select>
+                <!-- 검색 -->
+                <div class="top_info">
+                    <div class="login">
+                        <img src="img/index_icon_login.png" alt="">
+                        <img src="img/index_icon_instagram.png" alt="">
+                    </div>
+                    <div class="search">
+                        <input type="search" name="" id="" class="search_box" placeholder="12월 인기 프로그램!"
+                            onfocus="this.placeholder=''" onblur="this.placeholder='12월 인기 프로그램!'">
+                        <button class="search_bt"></button>
+                    </div>
                 </div>
             </div>
-        </footer>
-
-        <!-- 탑버튼 -->
-        <div id="top"><a href="#">
-                <img src="img/btn_top.png" alt="">
-            </a>
         </div>
-    </div>
+    </header>
 
-    <!-- 자바스크립트 -->
-    <!-- Swiper plugin JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <script>
+    <!-- ============================ 메인 (본인 페이지 작업) ============================ -->
+    <main>
+        <!-- 메인비주얼 배너 -->
+        <div id="main_banner">
+            <h1>PROGRAM</h1>
+            <p>다양한 천문과학지식 프로그램을 소개합니다.</p>
+        </div>
+        <div id="program_wrap">
+            <div class="program_in">
+                <div class="program_in_1">
+                    <div class="program_in_text">
+                        <h5>천문과학지식 프로그램</h5>
+                        <h1>친구들과 함께하는<br>단체별자리여행</h1>
+                        <p>연령대별 분화 · 심화된 내용으로 수요자 요구에 <br> 따라 맞춤 프로그램으로 구성됩니다.</p>
+                    </div>
+                    <div class="program_in_img">
+                        <img src="img/programimg 1.png" alt="program_img1">
+                        <img src="img/programimg 1-2.png" alt="program_img1-2">
+                    </div>
+                </div>
+                <div class="program_in_2">
+                    <h1>프로그램 정보</h1>
+                    <hr>
+                    <h2>일시</h2>
+                    <p>연중(사전 전화협의) / 기본 2시간 구성</p>
+                    <h2>대상</h2>
+                    <p>20명 이상의 학교 및 기관 유아, 청소년 단체(※6세 이상부터 가능)</p>
+                    <h2>장소</h2>
+                    <p>시립서울천문대(광진청소년센터)</p>
+                    <h2>금액</h2>
+                    <p>기본 20명 유아 100,000원, 청소년 120,000원, 성인 140,000원 /
+                        추가 1인당 유아 5,000원, 청소년 6,000원, 성인 7,000원</p>
+                </div>
+                <div class="program_in_2">
+                    <h1>신청 방법</h1>
+                    <hr>
+                    <p>- 홈페이지에서 사전예약 후, 프로그램 및 일정협의를 위한 전화상담을 진행하고 신청서 접수</p>
+                    <p>- 신청서 접수는 이메일, 팩스로 진행합니다.</p>
+                </div>
+                <div class="program_in_3">
+                    <h1>프로그램 구성</h1>
+                    <table class="program_table">
+                        <tr>
+                            <th>구분</th>
+                            <th>장소</th>
+                            <th>시간</th>
+                            <th>천체투영실 별오름</th>
+                        </tr>
+                        <tr>
+                            <td>영상교육</td>
+                            <td>천체투영실 별찬</td>
+                            <td>60분</td>
+                            <td>천문과학에 관련된 영상 상영 및 계절별 별자리 찾는 법 배우기 </td>
+                        </tr>
+                        <tr>
+                            <td>천체관측</td>
+                            <td>천체관측실 별오름</td>
+                            <td>30분 ~ 60분</td>
+                            <td >주간 : 태양의 흑점, 홍염<br>
+                                 야간 : 달, 행성, 성단, 이중성 등</td>
+                        </tr>
+                        <tr>
+                            <td>천문공작</td>
+                            <td>천체과학교육실</td>
+                            <td>30분</td>
+                            <td>천문·과학에 관한 공작을 통해서 흥미와 재미를 높이는 교육<br>
+                                (다양한 공작프로그램 중 택1)</td>
+                        </tr>
+                    </table>
+                </div>
+                <hr>
+                <div class="program_in_1">
+                    <div class="program_in_text">
+                        <h5>천문과학문화 프로그램</h5>
+                        <h1>도심 속 별빛산책</h1>
+                        <p>천체투영관을 통해 광활한 우주를 경험하고, 별자리에 대한 <br> 교육을 받은 후, 천체관측을 진행하는 프로그램</p>
+                    </div>
+                    <div class="program_in_img">
+                        <img src="img/programimg 2.png" alt="program_img2">
+                        <img src="img/programimg 2-2.png" alt="program_img2-2">
+                    </div>
+                </div>
+                <div class="program_in_2">
+                    <h1>프로그램 정보</h1>
+                    <hr>
+                    <h2>일시</h2>
+                    <p>1~12월 상시 매주 금, 토 운영</p>
+                    <h2>대상</h2>
+                    <p>6세 이상 유아, 청소년, 성인</p>
+                    <h2>장소</h2>
+                    <p>시립서울천문대(광진청소년센터)</p>
+                    <h2>금액</h2>
+                    <p>청소년을 포함한 경우 1인당 6,000원, 청소년을 포함하지 않은 경우 1인당 7,000원</p>
+                </div>
+                <div class="program_in_2">
+                    <h1>신청 방법</h1>
+                    <hr>
+                    <p>- 광진청소년센터 홈페이지 수강신청을 통해 접수</p>
+                </div>
+                <div class="program_in_3">
+                    <h1>프로그램 구성</h1>
+                    <table class="program_table">
+                        <tr>
+                            <th>구분</th>
+                            <th>장소</th>
+                            <th>시간</th>
+                            <th>내용</th>
+                        </tr>
+                        <tr>
+                            <td>주간</td>
+                            <td>천체투영실 별찬 /<br>
+                                천체관측실 별오름</td>
+                            <td>30분</td>
+                            <td>태양 이론 수업 /<br>
+                                망원경을 통한 태양관측<br>
+                                우천시:태양관측안경 만들기</td>
+                        </tr>
+                        <tr>
+                            <td>야간</td>
+                            <td>천체투영실 별찬 /<br>
+                                천체관측실 별오름</td>
+                            <td>30분</td>
+                            <td >계절별 별자리 /<br>
+                                 망원경을 통한 천체관측<br>
+                                 우천시 : 관측실 라운딩, 천문공작</td>
+                        </tr>
+                    </table>
+                </div>
+                <hr>
+                <div class="program_in_1">
+                    <div class="program_in_text">
+                        <h5>천문체험활동 프로그램</h5>
+                        <h1>천문동아리</h1>
+                        <p>천문학에 관심을 가진 중·고등학생들이 모이는 자율형 청소년 <br> 동아리로써 천문학에 대해 배우고
+                            지식봉사활동, <br> 1박 2일 관측회, 프로젝트 활동 등 진행
+                            </p>
+                    </div>
+                    <div class="program_in_img">
+                        <img src="img/programimg 3.png" alt="program_img3">
+                        <img src="img/programimg 3-2.png" alt="program_img3-2">
+                    </div>
+                </div>
+                <div class="program_in_2">
+                    <h1>프로그램 정보</h1>
+                    <hr>
+                    <h2>일시</h2>
+                    <p>3~12월 15회 이상</p>
+                    <h2>대상</h2>
+                    <p>중·고등학생 / 20명</p>
+                    <h2>장소</h2>
+                    <p>시립서울천문대(광진청소년센터), 관측회 등 외부 활동 장소</p>
+                    <h2>금액</h2>
+                    <p>1인 80,000원(연간 활동비)</p>
+                </div>
+                <div class="program_in_2">
+                    <h1>신청 방법</h1>
+                    <hr>
+                    <p>- 가입신청선 이메일 접수 → 서류 및 면접 심사 → 합격자 홈페이지 공고</p>
+                </div>
+                <hr>
+                <div class="program_in_1">
+                    <div class="program_in_text">
+                        <h5>지역사회연계 프로그램</h5>
+                        <h1>기관연계사업</h1>
+                        <p>천문과학 보급을 위해 유관기관과 연계하여 프로그램을 기획 및 <br> 진행하는 연계프로그램입니다.</p>
+                    </div>
+                    <div class="program_in_img">
+                        <img src="img/programimg 4.png" alt="program_img4">
+                        <img src="img/programimg 4-2.png" alt="program_img4-2">
+                    </div>
+                </div>
+                <div class="program_in_2">
+                    <h1>프로그램 정보</h1>
+                    <hr>
+                    <h2>일시</h2>
+                    <p>연중(사전 프로그램 회의 후 진행)</p>
+                    <h2>대상</h2>
+                    <p>시·구립 기관 및 사설기관</p>
+                    <h2>장소</h2>
+                    <p>서울특별시 일대</p>
+                    <h2>금액</h2>
+                    <p>프로그램별 상이</p>
+                </div>
+                <div class="program_in_2">
+                    <h1>신청 방법</h1>
+                    <hr>
+                    <p>- 사전 협의를 통한 일정조정</p>
+                </div>
+                <div class="program_in_4">
+                    <div class="back_program"><a href="./sub_program_1.html">프로그램 목록</a></div>
+                    <div class="res_program"><a href="./sub_program_3.html">예약하기</a></div>
+                </div>
+            </div>
+        </div>
+    </main>
 
-        // 탑버튼 (공통)
-        $("#top").click(function () {
-            $('html, body').animate({ scrollTop: 0 })
+    <!-- ============================ 탑버튼 (공통) ============================ -->
+    <div id="top"><a href="#"><img src="img/index_btn_top.png" alt=""></a></div>
 
-        })
+    <!-- ============================ 푸터 (공통) ============================ -->
+    <footer>
+        <div id="footer">
+            <div class="footer_logo">
+                <img src="img/index_logo_153x65.png" alt="">
+            </div>
 
-        // 메뉴 scroll css
-        $(window).scroll(function () {
-            var pageY = $(window).scrollTop();
-            //  console.log(pageY);
-            if (pageY >= 2600 && pageY <= 3300) {
-                $('header').addClass('active');
-                $('#header').css('display', 'flex').css('padding','10px');
-                $('.logo').css('margin', '0 auto');
-                $('.logo>img').css('width', '80%');
-                $('.main_menu>li>a').css('padding', '10px 40px 10px 0');
-            }
+            <div class="footer_info">
+                <ul>
+                    <li><a href="#">개인정보취급방침</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">사이트맵</a></li>
+                </ul>
+                <p class="footer_copyright">(04970) 서울시 광진구 구천면로 2(광장동 313-3)
+                    전화번호 02-2204-3190 팩스 02-2204-3150 사업자등록번호 206-82-65437
+                    Copyright(c) 2016 시립서울천문대 All Rights Reserved</p>
+            </div>
 
-            else if (pageY <= 80) {
-                $('header').removeClass('active');
-                $('#header').css('display', 'block').css('padding','0');
-                $('.logo').css('margin', '30px auto');
-                $('.logo>img').css('width', '100%');
-                $('.main_menu>li>a').css('padding', '10px 65px 10px 0');
-            }
-
-        })
-
-        // Swiper 플러그인
-    </script>
-
+            <div class="footer_site">
+                <select name="site" onchange="window.open(value, '_blank')" id="sitebar">
+                    <option value="https://www.kasi.re.kr/kor/index">한국천문연구원</option>
+                    <option value="http://www.scicenter.or.kr">한국과학관협회</option>
+                    <option value="http://www.kasma.kr">한국천문우주과학관협회</option>
+                    <option value="http://science.seoul.go.kr">서울시립과학관</option>
+                </select>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

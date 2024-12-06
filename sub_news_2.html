@@ -6,188 +6,245 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>시립서울천문대</title>
     <!-- 파비콘 -->
-    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="icon" href="img/favicon-32x32.png" type="image/x-icon">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <!-- 우리 작업 CSS-->
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/index-pc.css">
+    <link rel="stylesheet" href="css/index-mo.css">
     <link rel="stylesheet" href="css/sub_news_1.css">
     <link rel="stylesheet" href="css/sub_news_2.css">
-    <link rel="stylesheet" href="css/sub_program_1.css">
-    <link rel="stylesheet" href="css/sub_program_2.css">
 
     <!-- js -->
     <script src="js/jquery-3.7.1.js"></script>
     <!-- 우리 작업 js-->
-    <script src="js/index.js"></script>
+    <script src="js/index.js" defer></script>
     <script src="js/sub_news_1.js"></script>
-    <script src="js/sub_news_2.js"></script>
-    <script src="sub_program_1.js"></script>
-    <script src="sub_program_2.js"></script>
+
+    <!-- font awesome cdn 추가-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+    <script>
+        $(function () {
+            $('.con2-text2').css('display', 'none');
+            $('.con2-text2').stop().fadeIn(2000);
+        })
+    </script>
 </head>
 
 <body>
-    <div id="wrap">
-        <!-- 헤더 (공통) -->
-        <header>
-            <div id="header">
-                <div class="logo"><a href="index.html"><img src="img/logo_153x65.png" alt=""></a></div>
+    <!-- 헤더/푸터 index/sub페이지 동일 -->
 
-                <div class="top_wrap">
+    <!-- ============================ 헤더 (공통) ============================ -->
+    <header>
+        <div id="header">
+            <!-- 로고 -->
+            <div class="logo"><a href="index.html"><img src="img/index_logo_153x65.png" alt=""></a></div>
 
-                    <div class="nav">
-                        <ul class="main_menu">
-                            <li><a href="#">천문대 소개</a>
-                                <ul class="sub_menu">
-                                    <li><a href="#">천문대소개</a></li>
-                                    <li><a href="#">운영법인소개</a></li>
-                                    <li><a href="#">시설소개</a></li>
-                                    <li><a href="#">오시는 길</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">이용안내</a>
-                                <ul class="sub_menu">
-                                    <li><a href="#">이용안내</a></li>
-                                    <li><a href="#">관측대상</a></li>
-                                    <li><a href="#">월별일정</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">예약안내</a>
-                                <ul class="sub_menu">
-                                    <li><a href="#">예약안내</a></li>
-                                    <li><a href="#">예약하기</a></li>
-                                    <li><a href="#">환불규정</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="sub_program_1.html">프로그램 소개</a> <!-- 진우 작업페이지 연결 -->
-                                <ul class="sub_menu">
-                                    <li><a href="sub_program_2.html">천문과학지식 프로그램</a></li>
-                                    <li><a href="#">천문과학문화 프로그램</a></li>
-                                    <li><a href="#">천문체험활동 프로그램</a></li>
-                                    <li><a href="#">지역사회연계 프로그램</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="sub_news_1.html">천문소식</a> <!-- 도원 작업페이지 연결 -->
-                                <ul class="sub_menu">
-                                    <li><a href="sub_news_2.html">천문우주소식지</a></li>
-                                    <li><a href="#">천문우주이야기</a></li>
-                                    <li><a href="#">천체사진</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">참여마당</a>
-                                <ul class="sub_menu">
-                                    <li><a href="#">공지사항</a></li>
-                                    <li><a href="#">보도자료</a></li>
-                                    <li><a href="#">자주묻는 질문</a></li>
-                                    <li><a href="#">행사사진</a></li>
-                                    <li><a href="#">방문후기</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
+            <!-- 모바일 메뉴 버튼 -->
+            <div class="nav_mobile_btn"></div>
 
-                    <div class="top_info">
-                        <div class="login">
-                            <img src="img/login_2.png" alt="">
-                            <img src="img/instagram.png" alt="">
-                        </div>
-                        <div class="search">
-                            <input type="search" name="" id="" class="search_box" placeholder="12월 인기 프로그램!"
-                                onfocus="this.placeholder=''" onblur="this.placeholder='12월 인기 프로그램!'">
-                            <button class="search_bt"></button>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </header>
-
-
-        <!-- 메인 (본인 페이지 작업) -->
-        <main>
-            <!-- 메인비주얼 배너 -->
-            <div id="mian_wide">
-                <div class="wide_box">
-                    <img src="img/mimg_3.jpg" alt="">
-                </div>
-            </div>
-        </main>
-
-        <!-- 푸터 (공통) -->
-        <footer>
-            <div id="footer">
-                <div class="footer_logo">
-                    <img src="img/logo_153x65.png" alt="">
-                </div>
-
-                <div class="footer_info">
-                    <ul>
-                        <li><a href="#">개인정보취급방침</a></li>
-                        <li><a href="#">이용약관</a></li>
-                        <li><a href="#">사이트맵</a></li>
+            <div class="top_wrap">
+                <!-- 네비 -->
+                <div class="nav">
+                    <ul class="main_menu">
+                        <li><a href="#">천문대 소개</a>
+                            <ul class="sub_menu">
+                                <li><a href="#">천문대소개</a></li>
+                                <li><a href="#">운영법인소개</a></li>
+                                <li><a href="#">시설소개</a></li>
+                                <li><a href="#">오시는 길</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">이용안내</a>
+                            <ul class="sub_menu">
+                                <li><a href="#">이용안내</a></li>
+                                <li><a href="#">관측대상</a></li>
+                                <li><a href="#">월별일정</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">예약안내</a>
+                            <ul class="sub_menu">
+                                <li><a href="#">예약안내</a></li>
+                                <li><a href="#">예약하기</a></li>
+                                <li><a href="#">환불규정</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="sub_program_1.html">프로그램 소개</a> <!-- 진우 작업페이지 연결 -->
+                            <ul class="sub_menu">
+                                <li><a href="sub_program_2.html">천문과학지식 프로그램</a></li>
+                                <li><a href="sub_program_2.html">천문과학문화 프로그램</a></li>
+                                <li><a href="sub_program_2.html">천문체험활동 프로그램</a></li>
+                                <li><a href="sub_program_2.html">지역사회연계 프로그램</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="sub_news_1.html">천문소식</a> <!-- 도원 작업페이지 연결 -->
+                            <ul class="sub_menu">
+                                <li><a href="sub_news_2.html">천문우주이야기</a></li>
+                                <li><a href="#">천문우주소식지</a></li>
+                                <li><a href="#">천체사진</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">참여마당</a>
+                            <ul class="sub_menu">
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">보도자료</a></li>
+                                <li><a href="#">자주묻는 질문</a></li>
+                            </ul>
+                        </li>
                     </ul>
-                    <p class="footer_copyright">(04970) 서울시 광진구 구천면로 2(광장동 313-3)
-                        전화번호 02-2204-3190 팩스 02-2204-3150 사업자등록번호 206-82-65437
-                        Copyright(c) 2016 시립서울천문대 All Rights Reserved</p>
                 </div>
 
-                <div class="footer_site">
-                    <select name="site" onchange="window.open(value, '_blank')" id="sitebar">
-                        <option value="https://www.kasi.re.kr/kor/index">한국천문연구원</option>
-                        <option value="http://www.scicenter.or.kr">한국과학관협회</option>
-                        <option value="http://www.kasma.kr">한국천문우주과학관협회</option>
-                        <option value="http://science.seoul.go.kr">서울시립과학관</option>
-                    </select>
+                <!-- 검색 -->
+                <div class="top_info">
+                    <div class="login">
+                        <img src="img/index_icon_login.png" alt="">
+                        <img src="img/index_icon_instagram.png" alt="">
+                    </div>
+                    <div class="search">
+                        <input type="search" name="" id="" class="search_box" placeholder="12월 인기 프로그램!"
+                            onfocus="this.placeholder=''" onblur="this.placeholder='12월 인기 프로그램!'">
+                        <button class="search_bt"></button>
+                    </div>
                 </div>
             </div>
-        </footer>
-
-        <!-- 탑버튼 -->
-        <div id="top"><a href="#">
-                <img src="img/btn_top.png" alt="">
-            </a>
         </div>
-    </div>
+    </header>
+
+
+    <!-- ============================ 메인 (본인 페이지 작업) ============================ -->
+    <main>
+        <div id="wrap">
+            <div class="contents-1">
+            </div>
+            <div class="contents-2">
+                <div class="con2-1200">
+                    <div class="con2-img">
+                        <img src="./img/1-age-of-apace.jpg" alt="">
+
+                    </div>
+                    <div class="con2-text1">
+                        <p>SPACE STORY SERIES</p>
+                        <p>
+                            ARTICLE RECOMMENDATIONS
+                        </p>
+                    </div>
+                    <div class="con2-text2">
+                        <p>천문학과 관련된 흥미로운 지식</p>
+                        <h1>천문 우주 이야기</h1>
+
+                        <p>천문학은 정말 흥미롭고 신비로운 분야로, <br>
+                            우리가 살아가는 우주에 대한 깊은 이해를 제공합니다. </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contents-3">
+                <p>또 하나의 지구</p>
+                <div class="con3-wrap">
+                    <div class="con3-img">
+                        <img src="./img/3-super.png" alt="">
+                    </div>
+                    <div class="con3-text">
+                        <div class="titlebox">
+                            <input id="input1" type="text" value="슈퍼지구(Super-Earth)" readonly>
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <!-- <span>슈퍼지구(Super-Earth) </span><br> -->
+                        <p>
+                            지구보다 질량이나 크기가 큰 외계 행성을 지칭하는 천문학 용어입니다. 슈퍼지구는 지구와 비슷한 특성을 가진 행성이지만, 지구의 질량과 크기를 초과하는 특징을 가지고
+                            있습니다. 이들 행성은 대부분 자기 고유의 대기와 액체 상태의 물이 있을 가능성이 있는, 생명체가 존재할 수 있는 조건을 갖춘 곳으로 여겨집니다.
+                        </p>
+                        <div class="titlebox">
+                            <input type="text" value="슈퍼지구의 특성" readonly>
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <p>슈퍼지구는 대기층을 가지고 있을 가능성이 높습니다. 이는 행성이 생명체가 살 수 있는 조건을 가지고 있다는 의미일 수 있습니다. 대기 속의 기후 조건도 중요하며,
+                            대기와 기후의 조성에 따라 액체 상태의 물이 존재할 가능성도 큽니다.
+                        </p>
+                        <p>
+                            자료출처: <br>
+                            Korea Aerospace Research Institute
+                        </p>
+                    </div>
+
+                </div>
+                <div class="contents-4">
+                    <div class="con4-wrap">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/kOEDG3j1bjs?si=Zvngkg11O-fdHzkc"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                    </div>
+
+                </div>
+                <div class="contents-5">
+                    <div class="con5-text">
+
+                        <span>슈퍼지구의 중력</span>
+                        <p>
+                            슈퍼지구의 중력은 지구보다 클 수 있습니다. 행성의 질량이 크기 때문에 중력도 강할 수 있으며, 이는 표면의 환경에 영향을 미칠 수 있습니다. 중력이 너무 강하면
+                            생명체가 진화하기 어려울 수 있지만, 적당한 중력은 생명체의 존재 가능성을 높일 수 있습니다.
+                        </p>
+                    </div>
+                    <div class="con5-img">
+                        <div class="con5-img-baby">
+                            <img src="./img/Saturn.png" alt=""> <button>소식지 구독하기</button>
+                            <div class="con5-bk-cover"></div>
+                        </div>
+                        <div class="con5-img-baby">
+                            <img src="./img/solor-6.png" alt=""><button>프로그램 안내</button>
+                        </div>
+                        <div class="con5-img-baby">
+                            <img src="./img/4-astro.png" alt=""><button>이용 안내</button>
+                        </div>
+
+
+                    </div>
+                    <div class="con5-bkbox">
+                    </div>
+                </div>
+            </div>
+    </main>
+
+    <!-- ============================ 탑버튼 (공통) ============================ -->
+    <div id="top"><a href="#"><img src="img/index_btn_top.png" alt=""></a></div>
+
+    <!-- ============================ 푸터 (공통) ============================ -->
+    <footer>
+        <div id="footer">
+            <div class="footer_logo">
+                <img src="img/index_logo_153x65.png" alt="">
+            </div>
+
+            <div class="footer_info">
+                <ul>
+                    <li><a href="#">개인정보취급방침</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">사이트맵</a></li>
+                </ul>
+                <p class="footer_copyright">(04970) 서울시 광진구 구천면로 2(광장동 313-3)
+                    전화번호 02-2204-3190 팩스 02-2204-3150 사업자등록번호 206-82-65437
+                    Copyright(c) 2016 시립서울천문대 All Rights Reserved</p>
+            </div>
+
+            <div class="footer_site">
+                <select name="site" onchange="window.open(value, '_blank')" id="sitebar">
+                    <option value="https://www.kasi.re.kr/kor/index">한국천문연구원</option>
+                    <option value="http://www.scicenter.or.kr">한국과학관협회</option>
+                    <option value="http://www.kasma.kr">한국천문우주과학관협회</option>
+                    <option value="http://science.seoul.go.kr">서울시립과학관</option>
+                </select>
+            </div>
+        </div>
+    </footer>
 
     <!-- 자바스크립트 -->
     <!-- Swiper plugin JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <script>
-
-        // 탑버튼 (공통)
-        $("#top").click(function () {
-            $('html, body').animate({ scrollTop: 0 })
-
-        })
-
-        // 메뉴 scroll css
-        $(window).scroll(function () {
-            var pageY = $(window).scrollTop();
-            //  console.log(pageY);
-            if (pageY >= 2600 && pageY <= 3300) {
-                $('header').addClass('active');
-                $('#header').css('display', 'flex').css('padding','10px');
-                $('.logo').css('margin', '0 auto');
-                $('.logo>img').css('width', '80%');
-                $('.main_menu>li>a').css('padding', '10px 40px 10px 0');
-            }
-
-            else if (pageY <= 80) {
-                $('header').removeClass('active');
-                $('#header').css('display', 'block').css('padding','0');
-                $('.logo').css('margin', '30px auto');
-                $('.logo>img').css('width', '100%');
-                $('.main_menu>li>a').css('padding', '10px 65px 10px 0');
-            }
-
-        })
-
-        // Swiper 플러그인
-    </script>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 </body>
 
 </html>

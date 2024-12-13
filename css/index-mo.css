@@ -86,14 +86,15 @@
     }
 
     .main_menu>li {
-        border-bottom: 1px solid #333;
+        border-bottom: 1px solid #333; 
     }
 
     .main_menu>li>a {
         width: 100%;
+        font-size: 1.2rem; 
         display: block;
         padding: 20px 30px;
-        font-size: 2em;
+         
         text-align: left;
         /* color: #fff; */
         /* cursor: pointer; */
@@ -101,6 +102,7 @@
 
     /* 서브메뉴 기본적으로 숨기기 */
     .sub_menu {
+        font-size: 0.8rem; 
         height: auto;
         display: none;
         list-style: none;
